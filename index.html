@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+header{
+    background-color:#4E75EB;
+    padding: 30px;   
+}
+
+.p1{
+    color:white;
+    font-size:70px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;    
+}
+
+*{
+margin: 0;
+}
+
+.container{
+    padding: 100px;
+    height:460px;
+    width: 1330px;
+    background-color:  #c2c2a3;
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white; 
+    margin: -80px -10px;  
+}
+
+.inputs{
+	width: 50%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 50px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+          background-color:white;
+          padding: 10px;
+          width: 200px;
+          height: 60px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 40px;
+          border-radius: 15px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          color: #4E75EB;
+          border: solid 2px;
+          border-color: #4E75EB;
+          margin-top: 60px;
+      }
+
+      .btn:hover {
+    background-color: #4E75EB; /* Green */
+    color: white;
+}
+    </style>
+
+</head>
+<body>
+
+    <header class="cabeçalho">
+        <p class="p1"><b>Tela de Cadastro</b></p>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+<div class="container">
+    <form method="POST" action="salva_mensagem.php" onsubmit="return validar()">
+        <input type="nome" class="inputs" name="nome" size="52" maxlength="150" placeholder="Digite o seu nome"><br><br>
+        <input type="text" class="inputs" autocomplete="off" maxlength="14" name="cpf" size="52" 
+        placeholder="Digite o seu CPF">
+        <br>
+        <input class="btn" type="submit"  name="botão" value="Cadastrar">
+    </form>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
